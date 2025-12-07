@@ -1,0 +1,15 @@
+crewai>=0.30.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+langchain-openai>=0.1.0
+langchain-core>=0.1.0
+langchain-google-genai
+langchain-experimental>=0.0.50
+neo4j>=5.20.0
+streamlit>=1.35.0
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+# RAG & Graph tools
+langchain-neo4j>=0.0.1
+# Language detection
+textblob>=0.17.0

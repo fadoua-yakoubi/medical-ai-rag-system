@@ -1,0 +1,421 @@
+[
+  {
+    "maladie": "Diabète de type 2",
+    "symptomes": [
+      "fatigue",
+      "soif excessive",
+      "vision floue",
+      "faim excessive",
+      "urine fréquente",
+      "plaies qui cicatrisent lentement",
+      "picotements dans les pieds"
+    ],
+    "traitements": [
+      "Metformine",
+      "Insuline",
+      "Régime alimentaire",
+      "Exercice régulier",
+      "Suivi glycémie"
+    ],
+    "causes": [
+      "obésité",
+      "manque exercice",
+      "génétique",
+      "alimentation riche en sucre",
+      "âge avancé",
+      "hypertension"
+    ]
+  },
+  {
+    "maladie": "Hypertension",
+    "symptomes": [
+      "maux de tête",
+      "étourdissement",
+      "vision trouble",
+      "essoufflement",
+      "douleur thoracique",
+      "fatigue",
+      "saignement nez"
+    ],
+    "traitements": [
+      "Ramipril",
+      "Diurétiques",
+      "Réduction du sel",
+      "Bêtabloquants",
+      "Inhibiteurs calciques",
+      "Exercice régulier"
+    ],
+    "causes": [
+      "stress",
+      "alimentation riche en sel",
+      "hérédité",
+      "surpoids",
+      "consommation alcool",
+      "sédentarité",
+      "apnée du sommeil"
+    ]
+  },
+  {
+    "maladie": "Asthme",
+    "symptomes": [
+      "toux",
+      "respiration sifflante",
+      "essoufflement",
+      "oppression thoracique",
+      "difficulté respirer la nuit",
+      "toux nocturne",
+      "fatigue à l'effort"
+    ],
+    "traitements": [
+      "Ventoline",
+      "Corticoïdes inhalés",
+      "Bronchodilatateurs",
+      "Anti-inflammatoires",
+      "Éviter les allergènes",
+      "Inhalateur de secours"
+    ],
+    "causes": [
+      "allergènes",
+      "pollution",
+      "exercice intense",
+      "infections respiratoires",
+      "hérédité",
+      "reflux gastrique",
+      "émotions"
+    ]
+  },
+  {
+    "maladie": "Anémie ferriprive",
+    "symptomes": [
+      "fatigue",
+      "peau pâle",
+      "vertiges",
+      "essoufflement",
+      "maux de tête",
+      "faiblesse musculaire",
+      "ongles cassants",
+      "tachycardie"
+    ],
+    "traitements": [
+      "Comprimés de fer",
+      "régime riche en fer",
+      "Suppléments vitamine C",
+      "Transfusion sanguine",
+      "Traiter cause sous-jacente"
+    ],
+    "causes": [
+      "carence en fer",
+      "pertes menstruelles",
+      "alimentation pauvre",
+      "malabsorption",
+      "saignement interne",
+      "grossesse"
+    ]
+  },
+  {
+    "maladie": "Rhume commun",
+    "symptomes": [
+      "nez congestionné",
+      "écoulement nasal",
+      "toux légère",
+      "gorge irritée",
+      "éternuements",
+      "malaise général",
+      "fatigue légère",
+      "mal de tête"
+    ],
+    "traitements": [
+      "Repos",
+      "Hydratation",
+      "Décongestionnants",
+      "Inhalation vapeur",
+      "Honey",
+      "Zinc",
+      "Vitamine C"
+    ],
+    "causes": [
+      "virus rhinovirus",
+      "transmission aérienne",
+      "contact direct",
+      "stress",
+      "fatigue",
+      "exposition au froid",
+      "immunité faible"
+    ]
+  },
+  {
+    "maladie": "Grippe",
+    "symptomes": [
+      "fièvre élevée",
+      "frissons",
+      "douleurs musculaires",
+      "mal de tête intense",
+      "fatigue extrême",
+      "toux sèche",
+      "gorge irritée",
+      "congestion nasale"
+    ],
+    "traitements": [
+      "Tamiflu",
+      "Repos complet",
+      "Hydratation intensive",
+      "Paracétamol",
+      "Anti-inflammatoires",
+      "Vapeur inhalation",
+      "Isolement"
+    ],
+    "causes": [
+      "virus influenza A",
+      "virus influenza B",
+      "transmission gouttelettes",
+      "contact surface contaminée",
+      "immunité faible",
+      "exposition prolongée"
+    ]
+  },
+  {
+    "maladie": "Gastroentérite",
+    "symptomes": [
+      "diarrhée",
+      "vomissements",
+      "douleurs abdominales",
+      "nausée",
+      "fièvre",
+      "perte appétit",
+      "faiblesse",
+      "crampes abdominales"
+    ],
+    "traitements": [
+      "Réhydratation orale",
+      "Repos digestif",
+      "Anti-diarrhéiques",
+      "Anti-nausée",
+      "Alimentation légère",
+      "Probiotiques",
+      "Électrolytes"
+    ],
+    "causes": [
+      "nourriture contaminée",
+      "eau non potable",
+      "virus entérovirus",
+      "bactéries pathogènes",
+      "hygiène insuffisante",
+      "contact personne infectée"
+    ]
+  },
+  {
+    "maladie": "Migraines",
+    "symptomes": [
+      "mal de tête intense",
+      "nausée",
+      "sensibilité lumière",
+      "sensibilité bruit",
+      "vision trouble",
+      "vertiges",
+      "fatigue",
+      "douleur pulsatile"
+    ],
+    "traitements": [
+      "Triptans",
+      "Anti-inflammatoires",
+      "Repos dans l'obscurité",
+      "Compresses froides",
+      "Massage cervical",
+      "Hypnose",
+      "Relaxation musculaire"
+    ],
+    "causes": [
+      "stress",
+      "changements hormonaux",
+      "aliments déclencheurs",
+      "manque sommeil",
+      "déshydratation",
+      "caféine",
+      "lumière clignotante"
+    ]
+  },
+  {
+    "maladie": "Pneumonie",
+    "symptomes": [
+      "toux productive",
+      "fièvre élevée",
+      "frissons",
+      "douleur thoracique",
+      "essoufflement",
+      "fatigue extrême",
+      "expectorations teintées",
+      "confusion possible"
+    ],
+    "traitements": [
+      "Antibiotiques",
+      "Antiviraux",
+      "Oxygène",
+      "Repos complet",
+      "Hydratation",
+      "Expectorants",
+      "Vaccin pneumocoque"
+    ],
+    "causes": [
+      "bactéries streptococcus",
+      "virus influence",
+      "champignons",
+      "aspiration",
+      "immunité compromise",
+      "fumée tabac",
+      "alcoolisme"
+    ]
+  },
+  {
+    "maladie": "Bronchite",
+    "symptomes": [
+      "toux persistante",
+      "expectorations",
+      "essoufflement",
+      "douleur thoracique",
+      "fatigue",
+      "fièvre légère",
+      "malaise général",
+      "respiration sifflante"
+    ],
+    "traitements": [
+      "Expectorants",
+      "Bronchodilatateurs",
+      "Antitussifs",
+      "Inhalation vapeur",
+      "Repos",
+      "Antibiotiques si bactérienne",
+      "Humidificateur"
+    ],
+    "causes": [
+      "virus respiratoire",
+      "bactéries",
+      "fumée tabac",
+      "pollution air",
+      "reflux gastrique",
+      "allergie",
+      "complications rhume"
+    ]
+  },
+  {
+    "maladie": "Angine streptococcique",
+    "symptomes": [
+      "gorge très irritée",
+      "difficulté avaler",
+      "fièvre élevée",
+      "ganglions enflés",
+      "mal de tête",
+      "douleurs corporelles",
+      "amygdales rouges",
+      "pus sur amygdales"
+    ],
+    "traitements": [
+      "Pénicilline",
+      "Amoxicilline",
+      "Paracétamol",
+      "Spray throat",
+      "Boissons chaudes",
+      "Repos",
+      "Ibuprofène"
+    ],
+    "causes": [
+      "streptocoque groupe A",
+      "transmission salive",
+      "contact direct",
+      "immunité faible",
+      "stress",
+      "fatigue chronique"
+    ]
+  },
+  {
+    "maladie": "Sinusite",
+    "symptomes": [
+      "congestion nasale",
+      "pression sinus",
+      "mal de tête frontal",
+      "écoulement postnasal",
+      "douleur faciale",
+      "fièvre légère",
+      "toux nocturne",
+      "mauvais goût bouche"
+    ],
+    "traitements": [
+      "Décongestionnants",
+      "Spray nasal stéroïde",
+      "Antibiotiques si bactérienne",
+      "Inhalation vapeur",
+      "Irrigation nasale",
+      "Mucolytiques",
+      "Antipyrétiques"
+    ],
+    "causes": [
+      "infection virale",
+      "infection bactérienne",
+      "allergies nasales",
+      "polypes nasaux",
+      "déviation septale",
+      "pollution air",
+      "changement température"
+    ]
+  },
+  {
+    "maladie": "Dermatite atopique",
+    "symptomes": [
+      "démangeaisons intenses",
+      "rougeurs",
+      "peau sèche",
+      "eczéma",
+      "plaques inflammées",
+      "suintement",
+      "croûtes",
+      "épaississement peau"
+    ],
+    "traitements": [
+      "Crèmes hydratantes",
+      "Corticoïdes topiques",
+      "Anti-histaminiques",
+      "Bains tièdes",
+      "Émollients",
+      "Éviter irritants",
+      "Photothérapie"
+    ],
+    "causes": [
+      "génétique",
+      "défaut barrière cutanée",
+      "allergènes",
+      "irritants chimiques",
+      "stress",
+      "changements climatiques",
+      "acariens"
+    ]
+  },
+  {
+    "maladie": "Hyperthyroïdie",
+    "symptomes": [
+      "perte poids rapide",
+      "intolérance chaleur",
+      "tremblements",
+      "irritabilité",
+      "tachycardie",
+      "fatigue paradoxale",
+      "transpiration excessive",
+      "insomnie"
+    ],
+    "traitements": [
+      "Antithyroïdiens",
+      "Bêtabloquants",
+      "Iode radioactif",
+      "Chirurgie thyroïde",
+      "Repos",
+      "Alimentation équilibrée",
+      "Suivi hormones"
+    ],
+    "causes": [
+      "maladie Graves",
+      "thyroïdite",
+      "nodules thyroïde",
+      "surcharge iode",
+      "stress",
+      "exposition radioactivité"
+    ]
+  }
+]
