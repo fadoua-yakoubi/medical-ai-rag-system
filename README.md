@@ -137,7 +137,7 @@ Agent 2: Explainer
     ├─ Structure Results
     └─ Generate Response
     ↓
-Format Answer in Same Language (FR/EN)
+Format Answer 
     ↓
 Display in Streamlit
 ```
@@ -376,54 +376,9 @@ For detailed troubleshooting, check:
 - **Retry logic**: 3 tentatives avec backoff pour gérer rate limits
 - **Normalisation des symptômes**: Retire modificateurs ("severe", "high") automatiquement
 
-## 🔧 Troubleshooting
 
-### "Model not found: llama-3.x-xxb-instant"
-**Cause**: Nom de modèle incorrect ou indisponible
-**Solution**: 
-- Vérifiez les modèles disponibles sur https://console.groq.com
-- Modèles courants: `llama-3.3-70b-versatile`, `llama-3.1-70b-versatile`, `mixtral-8x7b-32768`
-- Mettez à jour `GOOGLE_MODEL_NAME` dans `.env`
 
-### "Invalid response from LLM call - None or empty"
-**Cause**: Rate limiting Groq (free tier)
-**Solution**: 
-- Attendez 30-60 secondes entre requêtes
-- Le code inclut déjà `max_retries=3` et `request_timeout=90s`
-- Réduisez `max_iter` si nécessaire
 
-### "Graph Context: []" ou mauvais résultats
-**Cause**: Symptômes avec modificateurs non reconnus ("severe headache" vs "headache")
-**Solution**: 
-- La **normalisation automatique** est maintenant active dans `tools.py`
-- Le système retire automatiquement "severe", "high", "bad", etc.
-- Enrichissez la base avec `python enrich_database.py`
-
-### Dependences Conflicts
-**json-repair**: Utilisez version `0.25.2` (pas 0.54.2)
-```bash
-pip install json-repair==0.25.2
-```
-
-## 📁 Structure du Projet
-
-```
-medical_graph_rag/
-├── app.py                  # Interface Streamlit principale
-├── src/
-│   ├── crew.py            # Configuration CrewAI (agents + tasks)
-│   ├── tools.py           # Medical Graph Search tool (GraphCypherQAChain + normalisation)
-│   └── graph.py           # Neo4j connection + seed_db()
-├── requirements.txt       # Dépendances Python
-├── .env                   # Configuration (API keys, Neo4j credentials)
-├── enrich_database.py     # Script pour enrichir avec 12 maladies et 35+ symptômes
-├── reseed.py             # Script pour nettoyer et repeupler Neo4j (ancienne base)
-└── README.md             # Documentation
-
-Scripts utilitaires:
-├── check_db.py           # Vérifie l'état de Neo4j
-└── test_queries.py       # Teste les requêtes Cypher
-```
 
 ## 🔑 Variables d'Environnement
 
@@ -460,24 +415,6 @@ NEO4J_PASSWORD=your_password                   # Mot de passe Neo4j
 - "I have body aches, chills, and headache"
 - "I have sneezing, watery eyes, and itching"
 
-## 📈 Évolutions Futures
-
-### Améliorations Techniques:
-- [x] Normalisation automatique des symptômes (modificateurs)
-- [x] Base de données enrichie (12 maladies, 35+ symptômes)
-- [ ] Ajouter propriétés aux maladies (durée, traitement recommandé)
-- [ ] Supporter les requêtes en français (actuellement en anglais)
-
-### Optimisations Performance:
-- [ ] Caching des requêtes Cypher fréquentes
-- [ ] Batch processing pour multiple symptom queries
-- [ ] Fallback vers autre LLM si Groq rate limit
-
-### Features:
-- [ ] Historique des diagnostics
-- [ ] Export PDF du rapport médical
-- [ ] Graphe de visualisation Neo4j dans l'UI
-- [ ] Ajout de tests et gravité des symptômes
 
 ## 📚 Ressources
 
@@ -486,24 +423,7 @@ NEO4J_PASSWORD=your_password                   # Mot de passe Neo4j
 - [CrewAI Documentation](https://docs.crewai.com)
 - [LangChain GraphCypherQAChain](https://python.langchain.com/docs/use_cases/graph/graph_cypher_qa)
 
-## ⚠️ Disclaimer
 
-Ce projet est **à but éducatif uniquement**. Il ne remplace pas un avis médical professionnel. Consultez toujours un médecin pour un diagnostic réel.
-
-## 📝 Notes de Développement
-
-### Historique des Changements:
-- **v1.0**: Version initiale avec Google Gemini (abandonné - quota épuisé)
-- **v2.0**: Migration vers Groq + Llama 3.1 8B Instant
-- **v2.1**: Fix symptom case sensitivity (lowercase dans Neo4j)
-- **v2.2**: Fix intermediate_steps parsing (liste de 2 dicts séparés)
-- **v2.3**: Optimisation rate limits (max_iter=3, max_tokens=4000)
-
-### Défis Résolus:
-1. **Dependency Conflicts**: `json-repair` downgrade à 0.25.2
-2. **Empty Graph Results**: Symptômes en lowercase requis
-3. **LLM Empty Responses**: Rate limiting Groq → ajout retry logic
-4. **CrewAI Provider Detection**: Override OPENAI_API_BASE vers Groq
 
 ---
 
