@@ -405,25 +405,7 @@ For detailed troubleshooting, check:
 pip install json-repair==0.25.2
 ```
 
-## 📁 Structure du Projet
 
-```
-medical_graph_rag/
-├── app.py                  # Interface Streamlit principale
-├── src/
-│   ├── crew.py            # Configuration CrewAI (agents + tasks)
-│   ├── tools.py           # Medical Graph Search tool (GraphCypherQAChain + normalisation)
-│   └── graph.py           # Neo4j connection + seed_db()
-├── requirements.txt       # Dépendances Python
-├── .env                   # Configuration (API keys, Neo4j credentials)
-├── enrich_database.py     # Script pour enrichir avec 12 maladies et 35+ symptômes
-├── reseed.py             # Script pour nettoyer et repeupler Neo4j (ancienne base)
-└── README.md             # Documentation
-
-Scripts utilitaires:
-├── check_db.py           # Vérifie l'état de Neo4j
-└── test_queries.py       # Teste les requêtes Cypher
-```
 
 ## 🔑 Variables d'Environnement
 
@@ -503,9 +485,7 @@ Ce projet est **à but éducatif uniquement**. Il ne remplace pas un avis médic
 1. **Dependency Conflicts**: `json-repair` downgrade à 0.25.2
 2. **Empty Graph Results**: Symptômes en lowercase requis
 3. **LLM Empty Responses**: Rate limiting Groq → ajout retry logic
-4. **CrewAI Provider Detection**: Override OPENAI_API_BASE vers Groq
 
 ---
 
-**Développé avec ❤️ en utilisant 100% d'outils gratuits**
 ```
